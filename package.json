@@ -2,6 +2,7 @@
   "name": "bitcoin_chart",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bodi44.github.io/BTC-chart/",
   "dependencies": {
     "@vx/axis": "0.0.183",
     "@vx/curve": "0.0.153",
@@ -16,12 +17,15 @@
     "d3-array": "^1.2.1",
     "d3-format": "^1.3.2",
     "d3-time-format": "^2.1.1",
+    "gh-pages": "^2.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env =jsdom",
     "eject": "react-scripts eject"

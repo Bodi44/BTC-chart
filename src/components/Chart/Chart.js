@@ -6,14 +6,12 @@ import { withScreenSize } from '@vx/responsive'
 import { withTooltip, Tooltip } from '@vx/tooltip'
 import { AxisBottom, AxisLeft } from '@vx/axis'
 import { curveNatural } from '@vx/curve'
+import { localPoint } from '@vx/event'
 
 import { extent, max, min, bisector } from 'd3-array'
 import { timeFormat } from 'd3-time-format'
 
 import './Chart.css'
-
-import { localPoint } from '@vx/event'
-
 
 class Chart extends Component {
   static defaultProps = {

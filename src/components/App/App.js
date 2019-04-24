@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import { withScreenSize } from '@vx/responsive'
 
-import FormatPrice from '../../helpers/FormatPrice'
+import FormatPrice from '../../helpers/formatPrice'
 import Chart from '../Chart/Chart'
 
 import './App.css'
