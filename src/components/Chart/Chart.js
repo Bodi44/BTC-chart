@@ -131,23 +131,6 @@ class Chart extends Component {
             )}
           />
           <AxisBottom
-            top={654}
-            data={data}
-            scale={xScale}
-            x={xSelector}
-            numTicks={5}
-            stroke='#2c3e50'
-            strokeWidth={2}
-            tickLabelProps={(value, index) => ({
-              fontSize: 11,
-              fill: '#2c3e50',
-              textAnchor: 'end',
-            })}
-            tickComponent={({ formattedValue, ...tickProps }) => (
-              <text {...tickProps}>{formattedValue}</text>
-            )}
-          />
-          <AxisBottom
             top={0}
             data={data}
             scale={xScale}
